@@ -15,7 +15,10 @@ let x = createBrowserRouter([
       { path: "courses", element: <Courses /> },
       { path: "about", element: <About /> },
       { path: "contact", element: <Contact /> },
-      { path: "accounts", element: <Accounts /> },
+      { path: "accounts", element: <Accounts />,children: [
+        {path: "Instructor" , element: <Instructor />},
+        {path: "Student" , element: <Student />}  
+      ] },
     ],
   },
 ]);
