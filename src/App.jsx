@@ -4,6 +4,9 @@ import About from "./Components/About/About";
 import Contact from "./Components/Contact/Contact";
 import Accounts from "./Components/Accounts/Accounts";
 import Layout from "./Components/Layout/Layout";
+import Instructor from "./Components/Instructor/Instructor";
+import Student from "./Components/Student/Student";
+import Notfound from "./Components/Notfound/Notfound";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 let x = createBrowserRouter([
@@ -19,6 +22,7 @@ let x = createBrowserRouter([
         {path: "Instructor" , element: <Instructor />},
         {path: "Student" , element: <Student />}  
       ] },
+      {path:"*" , element: <Notfound />}
     ],
   },
 ]);
