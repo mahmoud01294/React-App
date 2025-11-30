@@ -7,7 +7,7 @@ function Navbar() {
     <div className="Header" id="Header">
       <nav className="navbar navbar-expand-lg bg-body-tertiary">
         <div className="container-fluid">
-          <Link className="navbar-brand" href="#">
+          <Link className="navbar-brand" to="/">
             <img className={style.imglogo} src="/logo.jpg" alt="logo" />
           </Link>
           <span className={style.s1}>Ta3alM</span>
@@ -25,7 +25,7 @@ function Navbar() {
           <div className="collapse navbar-collapse" id="navbarNavDropdown">
             <ul className="navbar-nav">
               <li className="nav-item">
-                <Link className="nav-link active" aria-current="page" href="/">
+                <Link className="nav-link active" aria-current="page" to="/">
                   Home
                 </Link>
               </li>
