@@ -52,7 +52,6 @@ function Navbar() {
                   id="x"
                   role="button"
                   data-bs-toggle="dropdown"
-                  aria-expanded="false"
                 >
                   Dropdown link
                 </Link>
