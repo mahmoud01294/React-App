@@ -1,3 +1,5 @@
+// App.jsx
+import React from "react";
 import Home from "./Components/Home/Home";
 import Courses from "./Components/Courses/Courses";
 import About from "./Components/About/About";
@@ -9,7 +11,7 @@ import Student from "./Components/Student/Student";
 import Notfound from "./Components/Notfound/Notfound";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
-let x = createBrowserRouter([
+const router = createBrowserRouter([
   {
     path: "/",
     element: <Layout />,
@@ -18,21 +20,21 @@ let x = createBrowserRouter([
       { path: "courses", element: <Courses /> },
       { path: "about", element: <About /> },
       { path: "contact", element: <Contact /> },
-      { path: "accounts", element: <Accounts />,children: [
-        {path: "Instructor" , element: <Instructor />},
-        {path: "Student" , element: <Student />}  
-      ] },
-      {path:"*" , element: <Notfound />}
+      {
+        path: "accounts",
+        element: <Accounts />,
+        children: [
+          { path: "instructor", element: <Instructor /> },
+          { path: "student", element: <Student /> },
+        ],
+      },
+      { path: "*", element: <Notfound /> },
     ],
   },
 ]);
 
 function App() {
-  return (
-    <>
-      <RouterProvider router={x}></RouterProvider>;
-    </>
-  );
+  return <RouterProvider router={router} />;
 }
 
 export default App;

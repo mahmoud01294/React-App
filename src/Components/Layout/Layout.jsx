@@ -8,12 +8,10 @@ function Layout() {
   return (
     <>
       <Navbar />
-
       <Outlet />
-
       <Footer />
     </>
   );
 }
 
-export default Layout
+export default Layout;
