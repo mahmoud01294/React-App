@@ -96,6 +96,7 @@ font-family:'JosefinSans-Bold';
 @font-face {
   font-family: 'Poppins-Normal';
   src: url(./fonts/Poppins/Poppins-Thin.ttf) format('truetype');
+  
 }
 
 @font-face {
@@ -105,6 +106,7 @@ font-family:'JosefinSans-Bold';
 @font-face {
   font-family: 'outfit-medium';
   src: url(./fonts/Outfit/static/Outfit-Medium.ttf) format('truetype');
+  
 }
 @font-face {
   font-family: 'outfit-Normal';

@@ -4,8 +4,8 @@ import style from "./Navbar.module.css";
 
 function Navbar() {
   return (
-    <div className="Header" id="Header">
-      <nav className="navbar navbar-expand-lg bg-body-tertiary">
+    <div className={style.Header} id="Header">
+      <nav className="navbar navbar-expand-lg">
         <div className="container-fluid">
           <Link className="navbar-brand" to="/">
             <img className={style.imglogo} src="/logo.jpg" alt="logo" />
@@ -23,48 +23,50 @@ function Navbar() {
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul className="navbar-nav">
-              <li className="nav-item">
-                <Link className="nav-link active" aria-current="page" to="/">
+            <ul className="navbar-nav m-auto" >
+              <li className="nav-item mx-3">
+                <Link className={`nav-link active ${style.navFont}`} aria-current="page" to="/">
                   Home
                 </Link>
               </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="/courses">
+              <li className="nav-item mx-3">
+                <Link className={`nav-link ${style.navFont}`} to="/courses">
                   Courses
                 </Link>
               </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="/about">
+              <li className="nav-item mx-3">
+                <Link className={`nav-link ${style.navFont}`} to="/about">
                   About
                 </Link>
               </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="/contact">
+              <li className="nav-item mx-3">
+                <Link className={`nav-link ${style.navFont}`} to="/contact">
                   Contact
                 </Link>
               </li>
 
-              <li className="nav-item dropdown">
+              <li className="nav-item dropdown mx-3">
                 <Link
-                  className="nav-link dropdown-toggle"
+                  className={`nav-link dropdown-toggle ${style.navFont}`}
                   to="/accounts"
                   id="x"
                   role="button"
                   data-bs-toggle="dropdown"
                 >
-                  Dropdown link
+                  Accounts
                 </Link>
                 <div className="dropdown-menu" aria-labelledby="x">
-                  <Link to="/accounts/instructor" className="dropdown-item">
+                  <Link to="/accounts/instructor" className={`dropdown-item ${style.navfontSibling}`}>
                     Instructor Dash Board
                   </Link>
-                  <Link to="/accounts/student" className="dropdown-item">
+                  <Link to="/accounts/student" className={`dropdown-item ${style.navfontSibling}`}>
                     Student Dash Board
                   </Link>
                 </div>
               </li>
+              <button type="submit" className={style.btn1}>Sign in</button>
             </ul>
+            
           </div>
         </div>
       </nav>

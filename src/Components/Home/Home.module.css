@@ -1,0 +1,35 @@
+.Hero {
+  background-image: url(/public/Hero.jpg);
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  flex-wrap: nowrap;
+  position: relative;
+}
+
+.Section_caption{
+text-align: left;
+}
+
+.Section_caption .reviews_caption{
+    
+}
+
+  
+
+.Section_caption h1{
+
+    font-size: 50px;
+    color: chocolate;
+    width:50%;
+    font-family: "JosefinSans-Bold";
+    line-height: 1.5;
+
+}
+    
+
+

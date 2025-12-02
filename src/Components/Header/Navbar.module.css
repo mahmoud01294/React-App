@@ -1,10 +1,39 @@
+.Header {
+  padding: 4px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.navFont {
+  font-family: "Poppins-Medium";
+}
+.navfontSibling {
+  font-family: "outfit-medium";
+  font-size: small;
+}
+
 .imglogo {
   max-width: 100px;
   border-radius: 50%;
 }
 
 .s1 {
-  font-size: 70px;
+  font-size: 30px;
   font-family: "JosefinSans-Medium";
-  font-weight: 200;
+  font-weight: 400;
+}
+
+.btn1 {
+  padding: 14px 30px;
+  border: 1px solid #ff5600;
+  background-color: transparent;
+  border-radius: 6px;
+  font-size: 20px;
+  margin-left: 80px;
+  color: #333;
+  font-family: "Poppins-Normal";
+  font-weight: 600;
 }
