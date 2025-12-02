@@ -1,4 +1,3 @@
-// App.jsx
 import React from "react";
 import Home from "./Components/Home/Home";
 import Courses from "./Components/Courses/Courses";
