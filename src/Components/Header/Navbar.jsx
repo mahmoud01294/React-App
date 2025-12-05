@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import style from "./Navbar.module.css";
+import logo from "../../assets/logo.jpg";
+
 
 function Navbar() {
   return (
@@ -8,7 +10,7 @@ function Navbar() {
       <nav className="navbar navbar-expand-lg">
         <div className="container-fluid">
           <Link className="navbar-brand" to="/">
-            <img className={style.imglogo} src="/logo.jpg" alt="logo" />
+            <img className={style.imglogo} src={logo} alt="logo" />
           </Link>
           <span className={style.s1}>Ta3alM</span>
           <button

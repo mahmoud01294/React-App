@@ -69,6 +69,13 @@ button:focus-visible {
 
 */
 
+.img{
+  max-width:100%;
+  
+}
+
+
+
 @font-face{
 font-family:'JosefinSans-Bold';
  src:url('./fonts/Josefin_Sans/static/JosefinSans-Bold.ttf') format('truetype');
